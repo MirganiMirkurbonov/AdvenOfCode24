@@ -1006,10 +1006,8 @@ var input = @"87501   76559
 20103   21592"; 
 #endregion
 
-var result = FirstDay.ParseInputToArrays(input);
+var arrays = FirstDay.ParseInputToArrays(input);
 
-var difference = FirstDay.SolutionSecond(result.leftColumn, result.rightColumn);
+var result = FirstDay.SolutionSecond(arrays.leftColumn, arrays.rightColumn);
 
-Console.WriteLine(difference);
-
-//565291 // 23150395
+Console.WriteLine(result);
